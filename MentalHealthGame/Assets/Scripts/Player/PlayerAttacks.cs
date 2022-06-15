@@ -23,6 +23,8 @@ public class PlayerAttacks : MonoBehaviour
 
     public void Shoot()
     {
+        FindObjectOfType<AudioManager>().Play("Pistol");
+
         Ray ray = new Ray(transform.position, transform.forward);
         RaycastHit hit;
 

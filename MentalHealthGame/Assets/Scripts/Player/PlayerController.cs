@@ -98,7 +98,7 @@ public class PlayerController : MonoBehaviour
 
     private void Shooting()
     {
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetMouseButtonDown(0) && isAiming)
         {
             FindObjectOfType<PlayerAttacks>().Shoot();
         }

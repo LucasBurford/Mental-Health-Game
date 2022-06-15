@@ -8,6 +8,7 @@ public class CameraInteraction : MonoBehaviour
     public Image crossHair;
     public Color defaultColour;
     public Color enemyColour;
+    public Color interactColour;
     public LayerMask interactLayer;
 
     public float rayLength;
@@ -23,15 +24,6 @@ public class CameraInteraction : MonoBehaviour
     void Update()
     {
         CastRay();
-
-        if (enemyInSights)
-        {
-            crossHair.color = enemyColour;
-        }
-        else
-        {
-            crossHair.color = defaultColour;
-        }
     }
 
     private void CastRay()
@@ -41,16 +33,35 @@ public class CameraInteraction : MonoBehaviour
 
         if (Physics.Raycast(ray, out hit, rayLength, interactLayer))
         {
-            enemyInSights = (hit.collider.gameObject.CompareTag("Enemy"));
+            HandleHit(hit);
         }
         else
         {
-            enemyInSights = false;
+            crossHair.color = defaultColour;
         }
     }
 
-    private void OnDrawGizmos()
+    private void HandleHit(RaycastHit hit)
     {
-        Gizmos.DrawRay(transform.position, transform.forward * rayLength);
+        GameObject go = hit.collider.gameObject;
+
+        switch (go.tag)
+        {
+            case "Enemy":
+                {
+                    crossHair.color = enemyColour;
+                }
+                break;
+            case "Grapple":
+                {
+                    crossHair.color = interactColour;
+
+                    if (Input.GetMouseButtonDown(0))
+                    {
+                        FindObjectOfType<PlayerAbilities>().StartGrapple(go.transform.position);
+                    }
+                }
+                break;
+        }
     }
 }
