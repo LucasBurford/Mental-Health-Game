@@ -634,6 +634,7 @@ GameObject:
   - component: {fileID: 919683074}
   - component: {fileID: 919683073}
   - component: {fileID: 919683072}
+  - component: {fileID: 919683076}
   m_Layer: 3
   m_Name: Enemy
   m_TagString: Enemy
@@ -720,6 +721,21 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &919683076
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 919683071}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a445d5cf9e9a674e82063b9e0df2c1b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 100
+  currentHealth: 0
+  isDead: 0
 --- !u!1 &1058738494
 GameObject:
   m_ObjectHideFlags: 0
@@ -1261,3 +1277,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e277f9bc6b8dcf64aba2d808eaf1ad04, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  shootableLayer:
+    serializedVersion: 2
+    m_Bits: 8
+  pistolRange: 25
+  pistolDamage: 50
