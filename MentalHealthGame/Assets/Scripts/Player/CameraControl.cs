@@ -4,12 +4,15 @@ using UnityEngine;
 
 public class CameraControl : MonoBehaviour
 {   
-    [SerializeField]
-    private Transform _target;
+    public Transform _target;
 
     private Vector3 _currentRotation;
     private Vector3 _smoothVelocity = Vector3.zero;
     public Vector2 _rotationXMinMax = new Vector2(-40, 40);
+
+    public float xOffset;
+    public float yOffset;
+    public float zOffset;
 
     public float _mouseSensitivity = 3.0f;
     public float _distanceFromTarget = 3.0f;
@@ -50,6 +53,6 @@ public class CameraControl : MonoBehaviour
         transform.localEulerAngles = _currentRotation;
 
         // Substract forward vector of the GameObject to point its forward vector to the target
-        transform.position = _target.position - transform.forward * _distanceFromTarget;
+        transform.position = new Vector3(_target.position.x + xOffset, _target.position.y + yOffset, _target.position.z + zOffset) - transform.forward * _distanceFromTarget;
     }
 }

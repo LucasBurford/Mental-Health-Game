@@ -5,6 +5,7 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     private CharacterController _controller;
+    public Animator animator;
     public Camera _followCamera;
 
     private Vector3 _playerVelocity;
@@ -20,6 +21,7 @@ public class PlayerController : MonoBehaviour
     public float _gravityValue = -9.81f;
 
     public bool isSprinting;
+    public bool isAiming;
     private bool _groundedPlayer;
 
     private void Start()
@@ -31,6 +33,9 @@ public class PlayerController : MonoBehaviour
     {
         Movement();
         Sprinting();
+        SetAnimations();
+        Aiming();
+        Shooting();
     }
 
     private void Movement()
@@ -51,11 +56,17 @@ public class PlayerController : MonoBehaviour
 
         _controller.Move(movementDirection * _playerSpeed * Time.deltaTime);
 
+
+
         if (movementDirection != Vector3.zero)
         {
             Quaternion desiredRotation = Quaternion.LookRotation(movementDirection, Vector3.up);
-
             transform.rotation = Quaternion.Slerp(transform.rotation, desiredRotation, _rotationSpeed * Time.deltaTime);
+        }
+
+        if (isAiming)
+        {
+            transform.rotation = Quaternion.Euler(transform.rotation.x, _followCamera.transform.eulerAngles.y, transform.rotation.z);
         }
 
         if (Input.GetButtonDown("Jump"))
@@ -66,6 +77,9 @@ public class PlayerController : MonoBehaviour
             {
                 _playerVelocity.y += Mathf.Sqrt(_jumpHeight * -3.0f * _gravityValue);
             }
+
+            animator.SetTrigger("StartJump");
+            animator.ResetTrigger("StartJump");
         }
 
         if (_groundedPlayer)
@@ -75,6 +89,26 @@ public class PlayerController : MonoBehaviour
 
         _playerVelocity.y += _gravityValue * Time.deltaTime;
         _controller.Move(_playerVelocity * Time.deltaTime);
+    }
+
+    private void Aiming()
+    {
+        isAiming = Input.GetMouseButton(1);
+    }
+
+    private void Shooting()
+    {
+        if (Input.GetMouseButtonDown(0))
+        {
+            FindObjectOfType<PlayerAttacks>().Shoot();
+        }
+    }
+
+    private void SetAnimations()
+    {
+        animator.SetFloat("MoveSpeed", currentSpeed.magnitude);
+        animator.SetBool("IsSprinting", isSprinting);
+        animator.SetBool("IsAiming", isAiming);
     }
 
     private void Sprinting()
