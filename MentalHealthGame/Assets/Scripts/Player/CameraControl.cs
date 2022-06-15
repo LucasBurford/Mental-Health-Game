@@ -3,27 +3,19 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class CameraControl : MonoBehaviour
-{
-    [SerializeField]
-    private float _mouseSensitivity = 3.0f;
-
-    private float _rotationY;
-    private float _rotationX;
-
+{   
     [SerializeField]
     private Transform _target;
 
-    [SerializeField]
-    private float _distanceFromTarget = 3.0f;
-
     private Vector3 _currentRotation;
     private Vector3 _smoothVelocity = Vector3.zero;
+    public Vector2 _rotationXMinMax = new Vector2(-40, 40);
 
-    [SerializeField]
-    private float _smoothTime = 0.2f;
-
-    [SerializeField]
-    private Vector2 _rotationXMinMax = new Vector2(-40, 40);
+    public float _mouseSensitivity = 3.0f;
+    public float _distanceFromTarget = 3.0f;
+    public float _smoothTime = 0.2f;
+    private float _rotationY;
+    private float _rotationX;
 
     public bool invertY;
 

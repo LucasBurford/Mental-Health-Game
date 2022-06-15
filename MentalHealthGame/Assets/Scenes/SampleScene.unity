@@ -254,11 +254,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 328ccc8e4279f7d4db45ab5287befea4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _mouseSensitivity: 3
   _target: {fileID: 2014794295}
-  _distanceFromTarget: 3
-  _smoothTime: 0.2
   _rotationXMinMax: {x: -40, y: 40}
+  _mouseSensitivity: 3
+  _distanceFromTarget: 5
+  _smoothTime: 0
+  invertY: 0
 --- !u!1 &395090325
 GameObject:
   m_ObjectHideFlags: 0
@@ -1081,11 +1082,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3be5b23770cc81643b6647e9ec3b178f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _playerSpeed: 5
-  _rotationSpeed: 10
   _followCamera: {fileID: 330585545}
+  jumps: 0
+  _playerSpeed: 5
+  defaultSpeed: 5
+  sprintSpeed: 8
+  _rotationSpeed: 10
   _jumpHeight: 1
   _gravityValue: -9.81
+  isSprinting: 0
 --- !u!143 &2014794297
 CharacterController:
   m_ObjectHideFlags: 0
