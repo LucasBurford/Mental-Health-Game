@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class PlayerAttacks : MonoBehaviour
 {
+    public Transform shootOrigin;
     public LayerMask shootableLayer;
 
     public float pistolRange;
@@ -25,7 +26,7 @@ public class PlayerAttacks : MonoBehaviour
     {
         FindObjectOfType<AudioManager>().Play("Pistol");
 
-        Ray ray = new Ray(transform.position, transform.forward);
+        Ray ray = new Ray(shootOrigin.position, transform.forward);
         RaycastHit hit;
 
         if (Physics.Raycast(ray, out hit, pistolRange, shootableLayer))
