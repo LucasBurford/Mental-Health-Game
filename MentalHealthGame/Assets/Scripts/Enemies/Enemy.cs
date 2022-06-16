@@ -40,7 +40,6 @@ public class Enemy : MonoBehaviour
     {
         if (!isDead)
         {
-            CheckDistance();
             CheckState();
         }
 
@@ -58,6 +57,7 @@ public class Enemy : MonoBehaviour
             case States.Idle:
                 {
                     ai.isStopped = true;
+                    CheckDistance();
                 }
                 break;
             case States.Chasing:
