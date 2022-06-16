@@ -18,7 +18,10 @@ public class PlayerController : MonoBehaviour
     public float sprintSpeed;
     public float _rotationSpeed = 10f;
     public float _jumpHeight = 1.0f;
+    public float jumpAnimResetTime;
     public float _gravityValue = -9.81f;
+    public float coyoteTime;
+    public float coyoteTimeCounter;
 
     public bool isSprinting;
     public bool isAiming;
@@ -56,8 +59,6 @@ public class PlayerController : MonoBehaviour
 
         _controller.Move(movementDirection * _playerSpeed * Time.deltaTime);
 
-
-
         if (movementDirection != Vector3.zero)
         {
             Quaternion desiredRotation = Quaternion.LookRotation(movementDirection, Vector3.up);
@@ -69,6 +70,15 @@ public class PlayerController : MonoBehaviour
             transform.rotation = Quaternion.Euler(transform.rotation.x, _followCamera.transform.eulerAngles.y, transform.rotation.z);
         }
 
+        if (_groundedPlayer)
+        {
+            coyoteTimeCounter = coyoteTime;
+        }
+        else
+        {
+            coyoteTimeCounter -= Time.deltaTime;
+        }
+
         if (Input.GetButtonDown("Jump"))
         {
             jumps++;
@@ -77,9 +87,11 @@ public class PlayerController : MonoBehaviour
             {
                 _playerVelocity.y += Mathf.Sqrt(_jumpHeight * -3.0f * _gravityValue);
             }
+        }
 
-            animator.SetTrigger("StartJump");
-            animator.ResetTrigger("StartJump");
+        if (Input.GetButtonUp("Jump"))
+        {
+            coyoteTimeCounter = 0;
         }
 
         if (_groundedPlayer)
@@ -109,6 +121,7 @@ public class PlayerController : MonoBehaviour
         animator.SetFloat("MoveSpeed", currentSpeed.magnitude);
         animator.SetBool("IsSprinting", isSprinting);
         animator.SetBool("IsAiming", isAiming);
+        animator.SetBool("IsGrappling", !_groundedPlayer);
     }
 
     private void Sprinting()

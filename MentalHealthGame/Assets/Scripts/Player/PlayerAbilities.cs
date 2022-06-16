@@ -24,6 +24,7 @@ public class PlayerAbilities : MonoBehaviour
         Vector3 startPos = transform.position;
 
         transform.position = Vector3.Lerp(startPos, grappleToPos, grappleSpeed);
+
         CheckGrappleDistance();
     }
 
@@ -32,6 +33,7 @@ public class PlayerAbilities : MonoBehaviour
         if (Vector3.Distance(transform.position, grappleToPos) <= grappleStoppingDistance)
         {
             shouldGrapple = false;
+            FindObjectOfType<PlayerController>().animator.SetBool("IsGrappling", false);
         }
     }
 
@@ -39,5 +41,6 @@ public class PlayerAbilities : MonoBehaviour
     {
         grappleToPos = grappleToPoint;
         shouldGrapple = true;
+        FindObjectOfType<PlayerController>().animator.SetBool("IsGrappling", true);
     }
 }
