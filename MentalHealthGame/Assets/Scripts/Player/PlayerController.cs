@@ -22,6 +22,10 @@ public class PlayerController : MonoBehaviour
     public float _gravityValue = -9.81f;
     public float coyoteTime;
     public float coyoteTimeCounter;
+    public float timeInAir;
+    public float airTimeAdd;
+    public float fallDamageTime;
+    public float fallDamageMultiplyer;
 
     public bool isSprinting;
     public bool isAiming;
@@ -39,6 +43,7 @@ public class PlayerController : MonoBehaviour
         SetAnimations();
         Aiming();
         Shooting();
+        CheckInAir();
     }
 
     private void Movement()
@@ -122,6 +127,25 @@ public class PlayerController : MonoBehaviour
         animator.SetBool("IsSprinting", isSprinting);
         animator.SetBool("IsAiming", isAiming);
         animator.SetBool("IsGrappling", !_groundedPlayer);
+    }
+
+    private void CheckInAir()
+    {
+        if (!_groundedPlayer)
+        {
+            timeInAir += airTimeAdd;
+            fallDamageMultiplyer += timeInAir;
+        }
+        else
+        {
+            timeInAir = 0;
+            fallDamageMultiplyer = 0;
+        }
+
+        if (timeInAir >= fallDamageTime && _groundedPlayer)
+        {
+            FindObjectOfType<Player>().TakeDamage(fallDamageMultiplyer);
+        }
     }
 
     private void Sprinting()
