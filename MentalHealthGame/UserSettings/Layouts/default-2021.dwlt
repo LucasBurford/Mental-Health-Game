@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 1536
     height: 780.8
   m_ShowMode: 4
-  m_Title: Project
+  m_Title: Scene
   m_RootView: {fileID: 6}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -48,7 +48,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 200}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 73
+  controlID: 116
 --- !u!114 &3
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -224,7 +224,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 200}
   m_MaxSize: {x: 16192, y: 16192}
   vertical: 1
-  controlID: 74
+  controlID: 70
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -249,7 +249,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 100}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
-  controlID: 75
+  controlID: 71
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -279,7 +279,7 @@ MonoBehaviour:
   - {fileID: 15}
   - {fileID: 14}
   m_Selected: 0
-  m_LastSelected: 4
+  m_LastSelected: 1
 --- !u!114 &12
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -420,466 +420,6 @@ MonoBehaviour:
     warnings: 0
     errors: 0
     success: 0
-  - isEnabled: 1
-    isActive: 1
-    isLoading: 0
-    isInitialized: 1
-    items:
-    - isActive: 1
-      message: WFXM_BulletHole Concrete material was not upgraded. There's no upgrader
-        to convert WFX/Alpha Blended (No Soft Particles) shader to selected pipeline
-      status: 2
-    - isActive: 1
-      message: WFXM_M_FlameSmall ScrollAdd material was not upgraded. There's no
-        upgrader to convert WFX/Scroll/Additive shader to selected pipeline
-      status: 2
-    - isActive: 1
-      message: WFX_M_StretchPalet material was not upgraded. There's no upgrader
-        to convert WFX/Additive Alpha8 shader to selected pipeline
-      status: 2
-    - isActive: 1
-      message: WFX_M_GroundGlow Add material was not upgraded. There's no upgrader
-        to convert WFX/Additive Alpha8 shader to selected pipeline
-      status: 2
-    - isActive: 1
-      message: Decal material was not upgraded. There's no upgrader to convert Shader
-        Graphs/Decal shader to selected pipeline
-      status: 2
-    - isActive: 1
-      message: WFX_BulletHole Concrete Lighted material was not upgraded. There's
-        no upgrader to convert WFX/Transparent Diffuse shader to selected pipeline
-      status: 2
-    - isActive: 1
-      message: WFX_M_SmokeGrenadeWhite material was not upgraded. There's no upgrader
-        to convert WFX/Scroll/Smoke shader to selected pipeline
-      status: 2
-    - isActive: 1
-      message: WFX_BulletHole Wood Lighted material was not upgraded. There's no
-        upgrader to convert WFX/Transparent Diffuse shader to selected pipeline
-      status: 2
-    - isActive: 1
-      message: WFX_BulletHole Generic Dirt material was not upgraded. There's no
-        upgrader to convert WFX/Alpha Blended (No Soft Particles) shader to selected
-        pipeline
-      status: 2
-    - isActive: 1
-      message: WFXM_M_MF Sparks RIFLE3 material was not upgraded. There's no upgrader
-        to convert WFX/Additive Alpha8 shader to selected pipeline
-      status: 2
-    - isActive: 1
-      message: WFXM_BulletHole Generic Dirt material was not upgraded. There's no
-        upgrader to convert WFX/Alpha Blended (No Soft Particles) shader to selected
-        pipeline
-      status: 2
-    - isActive: 1
-      message: WFXM_BulletHole Wood Lighted material was not upgraded. There's no
-        upgrader to convert WFX/Transparent Diffuse shader to selected pipeline
-      status: 2
-    - isActive: 1
-      message: WFXM_M_Impact WoodDebris material was not upgraded. There's no upgrader
-        to convert Legacy Shaders/Particles/Alpha Blended shader to selected pipeline
-      status: 2
-    - isActive: 1
-      message: WFX_BulletHole Concrete material was not upgraded. There's no upgrader
-        to convert WFX/Alpha Blended (No Soft Particles) shader to selected pipeline
-      status: 2
-    - isActive: 1
-      message: WFX_M_FlameSmall 4F Add material was not upgraded. There's no upgrader
-        to convert Legacy Shaders/Particles/Additive shader to selected pipeline
-      status: 2
-    - isActive: 1
-      message: WFXM_M_FlameSmall Add material was not upgraded. There's no upgrader
-        to convert Legacy Shaders/Particles/Additive shader to selected pipeline
-      status: 2
-    - isActive: 1
-      message: WFX_M_FlameThrower Stream material was not upgraded. There's no upgrader
-        to convert WFX/Additive Alpha8 shader to selected pipeline
-      status: 2
-    - isActive: 1
-      message: WFXM_M_SmokeSpikeStretched material was not upgraded. There's no upgrader
-        to convert WFX/Additive (Soft) Alpha8 shader to selected pipeline
-      status: 2
-    - isActive: 1
-      message: WFX_M_MF Sparks RIFLE3 material was not upgraded. There's no upgrader
-        to convert WFX/Additive Alpha8 shader to selected pipeline
-      status: 2
-    - isActive: 1
-      message: WFX_BulletHole Wood material was not upgraded. There's no upgrader
-        to convert WFX/Alpha Blended (No Soft Particles) shader to selected pipeline
-      status: 2
-    - isActive: 1
-      message: 
-      status: 3
-    - isActive: 1
-      message: WFX_BulletHole Metal material was not upgraded. There's no upgrader
-        to convert WFX/Alpha Blended (No Soft Particles) shader to selected pipeline
-      status: 2
-    - isActive: 1
-      message: Water_mat_01 material was not upgraded. There's no upgrader to convert
-        Shader Graphs/WaterShader shader to selected pipeline
-      status: 2
-    - isActive: 1
-      message: WFX_M_SmokeGrenade AB material was not upgraded. There's no upgrader
-        to convert WFX/Scroll/Alpha Blended shader to selected pipeline
-      status: 2
-    - isActive: 1
-      message: WFXM_M_SmokeScroll SoftMult material was not upgraded. There's no
-        upgrader to convert WFX/Scroll/Multiply Soft Tint shader to selected pipeline
-      status: 2
-    - isActive: 1
-      message: WFX_M_ExplosiveSmoke material was not upgraded. There's no upgrader
-        to convert WFX/Scroll/Smoke shader to selected pipeline
-      status: 2
-    - isActive: 1
-      message: WFX_M_ExplosionFlames Add material was not upgraded. There's no upgrader
-        to convert WFX/Additive Alpha8 shader to selected pipeline
-      status: 2
-    - isActive: 1
-      message: WFX_M_SmallDots Add material was not upgraded. There's no upgrader
-        to convert WFX/Additive Alpha8 shader to selected pipeline
-      status: 2
-    - isActive: 1
-      message: 
-      status: 3
-    - isActive: 1
-      message: SpriteMask-Default material was not upgraded. There's no upgrader
-        to convert Universal Render Pipeline/2D/Sprite-Mask shader to selected pipeline
-      status: 2
-    - isActive: 1
-      message: WFXM_M_NukeFlames ScrollAdd material was not upgraded. There's no
-        upgrader to convert WFX/Scroll/Additive shader to selected pipeline
-      status: 2
-    - isActive: 1
-      message: WFXM_M_SmokeGrenadeWhite material was not upgraded. There's no upgrader
-        to convert WFX/Scroll/Smoke shader to selected pipeline
-      status: 2
-    - isActive: 1
-      message: WFX_M_Impact Smoke material was not upgraded. There's no upgrader
-        to convert Legacy Shaders/Particles/Alpha Blended shader to selected pipeline
-      status: 2
-    - isActive: 1
-      message: WFX_M_FlameSmall ScrollAdd material was not upgraded. There's no upgrader
-        to convert WFX/Scroll/Additive shader to selected pipeline
-      status: 2
-    - isActive: 1
-      message: WFXM_M_Sparks Metal material was not upgraded. There's no upgrader
-        to convert WFX/Additive Alpha8 shader to selected pipeline
-      status: 2
-    - isActive: 1
-      message: SpatialMappingOcclusion material was not upgraded. There's no upgrader
-        to convert Universal Render Pipeline/VR/SpatialMapping/Occlusion shader to
-        selected pipeline
-      status: 2
-    - isActive: 1
-      message: WFXM_M_MF Side RIFLE1 material was not upgraded. There's no upgrader
-        to convert WFX/Additive Alpha8 shader to selected pipeline
-      status: 2
-    - isActive: 1
-      message: WFX_M_MF Sparks RIFLE1 material was not upgraded. There's no upgrader
-        to convert WFX/Additive Alpha8 shader to selected pipeline
-      status: 2
-    - isActive: 1
-      message: WFXM_M_FlameSmall 4F Add material was not upgraded. There's no upgrader
-        to convert Legacy Shaders/Particles/Additive shader to selected pipeline
-      status: 2
-    - isActive: 1
-      message: WFX_M_MF FrontRear RIFLE2 material was not upgraded. There's no upgrader
-        to convert WFX/Additive Alpha8 shader to selected pipeline
-      status: 2
-    - isActive: 1
-      message: WFXM_M_GroundGlow Add material was not upgraded. There's no upgrader
-        to convert WFX/Additive Alpha8 shader to selected pipeline
-      status: 2
-    - isActive: 1
-      message: WFX_M_Sparks Metal material was not upgraded. There's no upgrader
-        to convert WFX/Additive Alpha8 shader to selected pipeline
-      status: 2
-    - isActive: 1
-      message: WFX_M_Impact WoodDebris material was not upgraded. There's no upgrader
-        to convert Legacy Shaders/Particles/Alpha Blended shader to selected pipeline
-      status: 2
-    - isActive: 1
-      message: WFX_BulletHole Metal Lighted material was not upgraded. There's no
-        upgrader to convert WFX/Transparent Specular shader to selected pipeline
-      status: 2
-    - isActive: 1
-      message: WFXM_M_SmokeNoise material was not upgraded. There's no upgrader to
-        convert WFX/Scroll/Smoke shader to selected pipeline
-      status: 2
-    - isActive: 1
-      message: Water_mat_02 material was not upgraded. There's no upgrader to convert
-        Shader Graphs/WaterShader shader to selected pipeline
-      status: 2
-    - isActive: 1
-      message: WFXM_M_MF Side RIFLE3 material was not upgraded. There's no upgrader
-        to convert WFX/Additive Alpha8 shader to selected pipeline
-      status: 2
-    - isActive: 1
-      message: WFX_M_SmokeScroll SoftMult Average material was not upgraded. There's
-        no upgrader to convert WFX/Scroll/Multiply Soft Tint shader to selected pipeline
-      status: 2
-    - isActive: 1
-      message: WFX_M_MF FrontRear RIFLE1 material was not upgraded. There's no upgrader
-        to convert WFX/Additive Alpha8 shader to selected pipeline
-      status: 2
-    - isActive: 1
-      message: WFX_M_MF Side RIFLE3 material was not upgraded. There's no upgrader
-        to convert WFX/Additive Alpha8 shader to selected pipeline
-      status: 2
-    - isActive: 1
-      message: WFX_M_SmokeScroll Add material was not upgraded. There's no upgrader
-        to convert WFX/Scroll/Additive shader to selected pipeline
-      status: 2
-    - isActive: 1
-      message: WFX_M_MF FrontRear RIFLE3 material was not upgraded. There's no upgrader
-        to convert WFX/Additive Alpha8 shader to selected pipeline
-      status: 2
-    - isActive: 1
-      message: WFX_BulletHole Generic material was not upgraded. There's no upgrader
-        to convert WFX/Alpha Blended (No Soft Particles) shader to selected pipeline
-      status: 2
-    - isActive: 1
-      message: WFXM_M_GlowCircle Add material was not upgraded. There's no upgrader
-        to convert WFX/Additive Alpha8 shader to selected pipeline
-      status: 2
-    - isActive: 1
-      message: WFXM_M_ExplosionFlames Add material was not upgraded. There's no upgrader
-        to convert WFX/Additive Alpha8 shader to selected pipeline
-      status: 2
-    - isActive: 1
-      message: WFXM_M_MF Sparks RIFLE1 material was not upgraded. There's no upgrader
-        to convert WFX/Additive Alpha8 shader to selected pipeline
-      status: 2
-    - isActive: 1
-      message: SpatialMappingWireframe material was not upgraded. There's no upgrader
-        to convert Universal Render Pipeline/VR/SpatialMapping/Wireframe shader to
-        selected pipeline
-      status: 2
-    - isActive: 1
-      message: WFXM_M_Impact Smoke material was not upgraded. There's no upgrader
-        to convert Legacy Shaders/Particles/Alpha Blended shader to selected pipeline
-      status: 2
-    - isActive: 1
-      message: WFX_M_Smoke material was not upgraded. There's no upgrader to convert
-        Legacy Shaders/Particles/Additive (Soft) shader to selected pipeline
-      status: 2
-    - isActive: 1
-      message: Water_mat_03 material was not upgraded. There's no upgrader to convert
-        Shader Graphs/WaterShader shader to selected pipeline
-      status: 2
-    - isActive: 1
-      message: WFXM_M_FlameMine Add material was not upgraded. There's no upgrader
-        to convert WFX/Additive Alpha8 shader to selected pipeline
-      status: 2
-    - isActive: 1
-      message: WFX_M_MF Glow material was not upgraded. There's no upgrader to convert
-        WFX/Additive Alpha8 shader to selected pipeline
-      status: 2
-    - isActive: 1
-      message: WFXM_BulletHole Generic Sand material was not upgraded. There's no
-        upgrader to convert WFX/Alpha Blended (No Soft Particles) shader to selected
-        pipeline
-      status: 2
-    - isActive: 1
-      message: WFXM_M_SmallDots Add material was not upgraded. There's no upgrader
-        to convert WFX/Additive Alpha8 shader to selected pipeline
-      status: 2
-    - isActive: 1
-      message: WFXM_M_FlameBig Add material was not upgraded. There's no upgrader
-        to convert Legacy Shaders/Particles/Additive shader to selected pipeline
-      status: 2
-    - isActive: 1
-      message: WFX_M_FlameBig Add material was not upgraded. There's no upgrader
-        to convert Legacy Shaders/Particles/Additive shader to selected pipeline
-      status: 2
-    - isActive: 1
-      message: WFX_M_FlameMine Add material was not upgraded. There's no upgrader
-        to convert WFX/Additive Alpha8 shader to selected pipeline
-      status: 2
-    - isActive: 1
-      message: UnlightWhite material was not upgraded. There's no upgrader to convert
-        Unlit/Color shader to selected pipeline
-      status: 2
-    - isActive: 1
-      message: WFXM_M_MF FrontRear RIFLE2 material was not upgraded. There's no upgrader
-        to convert WFX/Additive Alpha8 shader to selected pipeline
-      status: 2
-    - isActive: 1
-      message: WFXM_M_StarFlames material was not upgraded. There's no upgrader to
-        convert WFX/Additive Alpha8 shader to selected pipeline
-      status: 2
-    - isActive: 1
-      message: WFXM_M_Smoke material was not upgraded. There's no upgrader to convert
-        Legacy Shaders/Particles/Additive (Soft) shader to selected pipeline
-      status: 2
-    - isActive: 1
-      message: WFXM_BulletHole Wood material was not upgraded. There's no upgrader
-        to convert WFX/Alpha Blended (No Soft Particles) shader to selected pipeline
-      status: 2
-    - isActive: 1
-      message: WFX_M_FlameSmall Add material was not upgraded. There's no upgrader
-        to convert Legacy Shaders/Particles/Additive shader to selected pipeline
-      status: 2
-    - isActive: 1
-      message: WFXM_M_MF Side RIFLE2 material was not upgraded. There's no upgrader
-        to convert WFX/Additive Alpha8 shader to selected pipeline
-      status: 2
-    - isActive: 1
-      message: WFX_M_MF Sparks RIFLE2 material was not upgraded. There's no upgrader
-        to convert WFX/Additive Alpha8 shader to selected pipeline
-      status: 2
-    - isActive: 1
-      message: WFX_M_Smoke SoftMult material was not upgraded. There's no upgrader
-        to convert WFX/Multiply Soft Tint shader to selected pipeline
-      status: 2
-    - isActive: 1
-      message: WFXM_M_FlameThrower Stream material was not upgraded. There's no upgrader
-        to convert WFX/Additive Alpha8 shader to selected pipeline
-      status: 2
-    - isActive: 1
-      message: WFX_M_SmokeNoise material was not upgraded. There's no upgrader to
-        convert WFX/Scroll/Smoke shader to selected pipeline
-      status: 2
-    - isActive: 1
-      message: WFXM_M_SmokeGrenade AB material was not upgraded. There's no upgrader
-        to convert WFX/Scroll/Alpha Blended shader to selected pipeline
-      status: 2
-    - isActive: 1
-      message: WFX_M_StarFlames material was not upgraded. There's no upgrader to
-        convert WFX/Additive Alpha8 shader to selected pipeline
-      status: 2
-    - isActive: 1
-      message: WFXM_M_MF Glow material was not upgraded. There's no upgrader to convert
-        WFX/Additive Alpha8 shader to selected pipeline
-      status: 2
-    - isActive: 1
-      message: WFX_M_SmokeSpikeStretched material was not upgraded. There's no upgrader
-        to convert WFX/Additive (Soft) Alpha8 shader to selected pipeline
-      status: 2
-    - isActive: 1
-      message: WFX_M_SmokeScroll SoftMult material was not upgraded. There's no upgrader
-        to convert WFX/Scroll/Multiply Soft Tint shader to selected pipeline
-      status: 2
-    - isActive: 1
-      message: WFXM_M_SmokeScroll SoftMult Average material was not upgraded. There's
-        no upgrader to convert WFX/Scroll/Multiply Soft Tint shader to selected pipeline
-      status: 2
-    - isActive: 1
-      message: WFXM_M_SmokeScroll Add material was not upgraded. There's no upgrader
-        to convert WFX/Scroll/Additive shader to selected pipeline
-      status: 2
-    - isActive: 1
-      message: WFXM_M_MF FrontRear RIFLE3 material was not upgraded. There's no upgrader
-        to convert WFX/Additive Alpha8 shader to selected pipeline
-      status: 2
-    - isActive: 1
-      message: WFX_M_Impact Debris material was not upgraded. There's no upgrader
-        to convert Legacy Shaders/Particles/Alpha Blended shader to selected pipeline
-      status: 2
-    - isActive: 1
-      message: WFX_M_MF Side RIFLE2 material was not upgraded. There's no upgrader
-        to convert WFX/Additive Alpha8 shader to selected pipeline
-      status: 2
-    - isActive: 1
-      message: WFXM_BulletHole Generic material was not upgraded. There's no upgrader
-        to convert WFX/Alpha Blended (No Soft Particles) shader to selected pipeline
-      status: 2
-    - isActive: 1
-      message: WFX_M_SmallDotsInv Mult material was not upgraded. There's no upgrader
-        to convert WFX/Multiply Alpha8 shader to selected pipeline
-      status: 2
-    - isActive: 1
-      message: WFXM_M_MF Sparks RIFLE2 material was not upgraded. There's no upgrader
-        to convert WFX/Additive Alpha8 shader to selected pipeline
-      status: 2
-    - isActive: 1
-      message: Sprite-Unlit-Default material was not upgraded. There's no upgrader
-        to convert Universal Render Pipeline/2D/Sprite-Unlit-Default shader to selected
-        pipeline
-      status: 2
-    - isActive: 1
-      message: WFX_M_NukeFlames ScrollAdd material was not upgraded. There's no upgrader
-        to convert WFX/Scroll/Additive shader to selected pipeline
-      status: 2
-    - isActive: 1
-      message: WFXM_BulletHole Metal Lighted material was not upgraded. There's no
-        upgrader to convert WFX/Transparent Specular shader to selected pipeline
-      status: 2
-    - isActive: 1
-      message: WFX_BulletHole Generic Sand material was not upgraded. There's no
-        upgrader to convert WFX/Alpha Blended (No Soft Particles) shader to selected
-        pipeline
-      status: 2
-    - isActive: 1
-      message: WFX_M_GlowCircle Add material was not upgraded. There's no upgrader
-        to convert WFX/Additive Alpha8 shader to selected pipeline
-      status: 2
-    - isActive: 1
-      message: WFXM_BulletHole Metal material was not upgraded. There's no upgrader
-        to convert WFX/Alpha Blended (No Soft Particles) shader to selected pipeline
-      status: 2
-    - isActive: 1
-      message: WFXM_M_StretchPalet material was not upgraded. There's no upgrader
-        to convert WFX/Additive Alpha8 shader to selected pipeline
-      status: 2
-    - isActive: 1
-      message: WFX_M_MF Side RIFLE1 material was not upgraded. There's no upgrader
-        to convert WFX/Additive Alpha8 shader to selected pipeline
-      status: 2
-    - isActive: 1
-      message: WFXM_M_ExplosiveSmoke material was not upgraded. There's no upgrader
-        to convert WFX/Scroll/Smoke shader to selected pipeline
-      status: 2
-    - isActive: 1
-      message: WFXM_BulletHole Concrete Lighted material was not upgraded. There's
-        no upgrader to convert WFX/Transparent Diffuse shader to selected pipeline
-      status: 2
-    - isActive: 1
-      message: WFXM_M_Smoke SoftMult material was not upgraded. There's no upgrader
-        to convert WFX/Multiply Soft Tint shader to selected pipeline
-      status: 2
-    - isActive: 1
-      message: WFX_M_GlowPalet Add material was not upgraded. There's no upgrader
-        to convert WFX/Additive Alpha8 shader to selected pipeline
-      status: 2
-    - isActive: 1
-      message: WFXM_M_GlowPalet Add material was not upgraded. There's no upgrader
-        to convert WFX/Additive Alpha8 shader to selected pipeline
-      status: 2
-    - isActive: 1
-      message: WFXM_M_MF FrontRear RIFLE1 material was not upgraded. There's no upgrader
-        to convert WFX/Additive Alpha8 shader to selected pipeline
-      status: 2
-    - isActive: 1
-      message: WFXM_M_SmallDotsInv Mult material was not upgraded. There's no upgrader
-        to convert WFX/Multiply Alpha8 shader to selected pipeline
-      status: 2
-    - isActive: 1
-      message: WFXM_M_Impact Debris material was not upgraded. There's no upgrader
-        to convert Legacy Shaders/Particles/Alpha Blended shader to selected pipeline
-      status: 2
-    pending: 0
-    warnings: 0
-    errors: 105
-    success: 2
-  - isEnabled: 1
-    isActive: 0
-    isLoading: 0
-    isInitialized: 0
-    items: []
-    pending: 0
-    warnings: 0
-    errors: 0
-    success: 0
-  - isEnabled: 1
-    isActive: 0
-    isLoading: 0
-    isInitialized: 0
-    items: []
-    pending: 0
-    warnings: 0
-    errors: 0
-    success: 0
 --- !u!114 &15
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -951,22 +491,22 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Models
+    - Assets/Scripts/Enemies
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Models
+  - Assets/Scripts/Enemies
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\lucas\Desktop\Stuff\Projects\Mental-Health-Game\MentalHealthGame
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 31}
-    m_SelectedIDs: 8e770000
-    m_LastClickedID: 30606
-    m_ExpandedIDs: 0000000084770000867700008e7700009a7700009e770000e6ea0000e8f00200eef002003a1d0500a02c0500
+    m_SelectedIDs: 30e20000
+    m_LastClickedID: 57904
+    m_ExpandedIDs: 00000000be840000c0840000ce840000d4840000aedf0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -994,7 +534,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 000000008477000086770000
+    m_ExpandedIDs: 00000000be840000c0840000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1123,10 +663,10 @@ MonoBehaviour:
     m_SaveData: []
   m_SceneHierarchy:
     m_TreeViewState:
-      scrollPos: {x: 0, y: 34}
+      scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: d866faff8caafaff3ce9fafffed8fbff6a0ffcffc21afeffc8e6ffff30fbfffffa6a0000fe6a0000526c0000
+      m_ExpandedIDs: 30fbffff4e7100008e7200002e790000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -1195,7 +735,7 @@ MonoBehaviour:
       floating: 0
       collapsed: 0
       displayed: 1
-      snapOffset: {x: -100, y: -25.600006}
+      snapOffset: {x: -101, y: -26}
       snapOffsetDelta: {x: 0, y: 0}
       snapCorner: 3
       id: Tool Settings
@@ -1217,7 +757,7 @@ MonoBehaviour:
       floating: 0
       collapsed: 0
       displayed: 1
-      snapOffset: {x: 0, y: 24.8}
+      snapOffset: {x: 0, y: 0}
       snapOffsetDelta: {x: 0, y: 0}
       snapCorner: 0
       id: unity-scene-view-toolbar
@@ -1376,9 +916,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -21.963951, y: -55.112507, z: -31.762257}
+    m_Target: {x: 30.00703, y: 7.900672, z: 60.73295}
     speed: 2
-    m_Value: {x: -21.963951, y: -55.112507, z: -31.762257}
+    m_Value: {x: 30.00703, y: 7.900672, z: 60.73295}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -1407,9 +947,9 @@ MonoBehaviour:
       m_Size: {x: 0, y: 0}
     yGrid:
       m_Fade:
-        m_Target: 1
+        m_Target: 0
         speed: 2
-        m_Value: 1
+        m_Value: 0
       m_Color: {r: 0.5, g: 0.5, b: 0.5, a: 0.4}
       m_Pivot: {x: 0, y: 0, z: 0}
       m_Size: {x: 1, y: 1}
@@ -1421,17 +961,17 @@ MonoBehaviour:
       m_Color: {r: 0.5, g: 0.5, b: 0.5, a: 0.4}
       m_Pivot: {x: 0, y: 0, z: 0}
       m_Size: {x: 0, y: 0}
-    m_ShowGrid: 1
+    m_ShowGrid: 0
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: 0.13086908, y: -0.8568068, z: 0.4221673, w: 0.26559287}
+    m_Target: {x: 0.07488933, y: 0.09587223, z: -0.0072397175, w: 0.99255085}
     speed: 2
-    m_Value: {x: 0.11282619, y: -0.87965834, z: 0.3821262, w: 0.25971356}
+    m_Value: {x: 0.082605556, y: 0.051094808, z: -0.004246822, w: 0.99526256}
   m_Size:
-    m_Target: 36.374447
+    m_Target: 7.5518723
     speed: 2
-    m_Value: 38.088425
+    m_Value: 7.9077196
   m_Ortho:
     m_Target: 0
     speed: 2

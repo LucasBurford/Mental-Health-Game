@@ -62,6 +62,7 @@ public class Enemy : MonoBehaviour
             case States.Idle:
                 {
                     ai.isStopped = true;
+                    settings.startColor = Color.black;
                     CheckDistance();
                 }
                 break;
@@ -69,6 +70,8 @@ public class Enemy : MonoBehaviour
                 {
                     ai.isStopped = false;
                     ai.SetDestination(player.transform.position);
+
+                    settings.startColor = Color.red;
 
                     if (Vector3.Distance(transform.position, player.transform.position) <= attackFromDistance)
                     {
@@ -125,7 +128,7 @@ public class Enemy : MonoBehaviour
     public void TakeDamage(float damageAmount)
     {
         currentHealth -= damageAmount;
-        settings.startColor = Color.red;
+        settings.startColor = Color.magenta;
         StartCoroutine(WaitToResetColour());
     }
 
