@@ -7,6 +7,7 @@ public class Enemy : MonoBehaviour
 {
     public Player player;
     public NavMeshAgent ai;
+    ParticleSystem.MainModule settings;
     public Transform attackPoint;
 
     public enum States
@@ -34,6 +35,7 @@ public class Enemy : MonoBehaviour
     {
         player = FindObjectOfType<Player>();
         ai = GetComponent<NavMeshAgent>();
+        settings = GetComponentInChildren<ParticleSystem>().main;
         currentHealth = maxHealth;
         ai.stoppingDistance = aiStoppingDistance;
     }
@@ -71,6 +73,11 @@ public class Enemy : MonoBehaviour
                     if (Vector3.Distance(transform.position, player.transform.position) <= attackFromDistance)
                     {
                         currentState = States.Attacking;
+                    }
+
+                    if (Vector3.Distance(transform.position, player.transform.position) >= aggroDistance)
+                    {
+                        currentState = States.Idle;
                     }
                 }
                 break;
@@ -118,6 +125,8 @@ public class Enemy : MonoBehaviour
     public void TakeDamage(float damageAmount)
     {
         currentHealth -= damageAmount;
+        settings.startColor = Color.red;
+        StartCoroutine(WaitToResetColour());
     }
 
     private void Die()
@@ -129,5 +138,11 @@ public class Enemy : MonoBehaviour
     {
         yield return new WaitForSeconds(attackResetTime);
         canAttack = true;
+    }
+
+    IEnumerator WaitToResetColour()
+    {
+        yield return new WaitForSeconds(0.2f);
+        settings.startColor = Color.black;
     }
 }
