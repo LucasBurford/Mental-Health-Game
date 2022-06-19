@@ -32359,6 +32359,10 @@ MonoBehaviour:
   _gravityValue: -15
   coyoteTime: 0.2
   coyoteTimeCounter: 0
+  timeInAir: 0
+  airTimeAdd: 0.05
+  fallDamageTime: 2.2
+  fallDamageMultiplyer: 5
   isSprinting: 0
   isAiming: 0
 --- !u!143 &2014794297
@@ -32425,6 +32429,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 06efa9a32a2cf4444ad5192ef31fdca3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  maxHealth: 100
+  currentHealth: 0
 --- !u!1 &2015154788
 GameObject:
   m_ObjectHideFlags: 0
@@ -35450,61 +35456,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Enemy
-      objectReference: {fileID: 0}
-    - target: {fileID: 3619983647525884892, guid: 28b382ba49fbb724e970fc2d892f5173,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3619983647525884893, guid: 28b382ba49fbb724e970fc2d892f5173,
-        type: 3}
-      propertyPath: canAttack
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3619983647525884893, guid: 28b382ba49fbb724e970fc2d892f5173,
-        type: 3}
-      propertyPath: aggroDistance
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 3619983647525884893, guid: 28b382ba49fbb724e970fc2d892f5173,
-        type: 3}
-      propertyPath: attackResetTime
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 3619983647525884893, guid: 28b382ba49fbb724e970fc2d892f5173,
-        type: 3}
-      propertyPath: aiStoppingDistance
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3619983647525884893, guid: 28b382ba49fbb724e970fc2d892f5173,
-        type: 3}
-      propertyPath: attackFromDistance
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3619983647525884894, guid: 28b382ba49fbb724e970fc2d892f5173,
-        type: 3}
-      propertyPath: m_Size.x
-      value: 0.89866716
-      objectReference: {fileID: 0}
-    - target: {fileID: 3619983647525884894, guid: 28b382ba49fbb724e970fc2d892f5173,
-        type: 3}
-      propertyPath: m_Size.z
-      value: 1.0431542
-      objectReference: {fileID: 0}
-    - target: {fileID: 3619983647525884894, guid: 28b382ba49fbb724e970fc2d892f5173,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3619983647525884894, guid: 28b382ba49fbb724e970fc2d892f5173,
-        type: 3}
-      propertyPath: m_Center.x
-      value: -0.05138302
-      objectReference: {fileID: 0}
-    - target: {fileID: 3619983647525884894, guid: 28b382ba49fbb724e970fc2d892f5173,
-        type: 3}
-      propertyPath: m_Center.z
-      value: 0.013809323
       objectReference: {fileID: 0}
     - target: {fileID: 3619983647525884895, guid: 28b382ba49fbb724e970fc2d892f5173,
         type: 3}

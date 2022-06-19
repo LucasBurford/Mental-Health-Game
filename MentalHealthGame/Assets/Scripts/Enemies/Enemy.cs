@@ -7,6 +7,7 @@ public class Enemy : MonoBehaviour
 {
     public Player player;
     public NavMeshAgent ai;
+    public Transform attackPoint;
 
     public enum States
     {
@@ -20,6 +21,8 @@ public class Enemy : MonoBehaviour
     public float currentHealth;
     public float aggroDistance;
     public float attackFromDistance;
+    public float attackRange;
+    public float attackDamage;
     public float attackResetTime;
     public float aiStoppingDistance;
 
@@ -88,7 +91,16 @@ public class Enemy : MonoBehaviour
 
     private void Attack()
     {
+        Collider[] hitObjects = Physics.OverlapSphere(attackPoint.position, attackRange);
 
+        foreach (Collider col in hitObjects)
+        {
+            if (col.GetComponent<Player>())
+            {
+                Player player = col.GetComponent<Player>();
+                player.TakeDamage(attackDamage);
+            }
+        }
     }
 
     private void CheckDistance()
